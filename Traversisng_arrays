@@ -1,0 +1,9 @@
+//1.Traverse an Array  
+// Sample --> input : int[] arr = {10, 20, 30, 40, 50}; Output : 10 20 30 40 50
+
+
+public static void traverseArray(int[] arr) {
+    for (int i = 0; i < arr.length; i++) {
+        System.out.print(arr[i] + " ");
+    }
+}
