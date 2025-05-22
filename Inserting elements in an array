@@ -1,0 +1,16 @@
+//2. Insert an element in an array
+ // input : arr = {1, 2, 4, 5}, element = 3, position = 2
+// Output : 1 2 3 4 5
+
+
+public static int[] insertElement(int[] arr, int element, int position) {
+    int[] newArr = new int[arr.length + 1];
+    for (int i = 0; i < position; i++) {
+        newArr[i] = arr[i];
+    }
+    newArr[position] = element;
+    for (int i = position; i < arr.length; i++) {
+        newArr[i + 1] = arr[i];
+    }
+    return newArr;
+}
