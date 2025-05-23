@@ -8,3 +8,6 @@ public static void findMaxMin(int[] arr) {
         if (arr[i] < min)
             min = arr[i];
     }
+   System.out.println("Max: " + max + ", Min: " + min);
+}
+
