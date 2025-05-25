@@ -1,0 +1,22 @@
+// 13.Median of an Array
+// Input: arr[] = [90, 100, 78, 89, 67]  Output: 89  
+//Input: arr[] = [56, 67, 30, 79]  Output: 61.5
+
+
+class Solution {
+    public double findMedian(int[] arr) {
+        int n = arr.length;
+        Arrays.sort(arr);
+        double median=0;
+        if(n==2){
+            median = (arr[0]+arr[1])/2.0;
+        }
+        else if (n%2 !=0){
+            median = arr[n/2];
+        }
+        else {
+            median = (arr[n/2]+arr[(n/2)-1]) / 2.0;
+        }
+        return median;
+    }
+}
