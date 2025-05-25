@@ -1,0 +1,8 @@
+//12.Calculate average of elements
+// Inputs:arr = {2, 4, 6, 8}   Output:Average: 5.0
+
+
+public static double averageArray(int[] arr) {
+    int sum = sumArray(arr);
+    return (double) sum / arr.length;
+}
